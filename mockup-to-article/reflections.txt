@@ -1,0 +1,23 @@
+You've learned a lot about web development so far. I want you to take a moment to write down your thoughts about web development here. Answer the following questions:
+  * What new skills have you learned?
+  * What has been easy?
+  * What has been difficult?
+  * How have you used the problem solving strategies from the first project to overcome challenges so far?
+
+---
+
+Your response goes here!
+
+* What new skills have you learned?
+
+  I learned "superscript," "horizontal rule," and "strikethrough". I loved the hints, because I don't even know how to say those in English. 
+* What has been easy?
+
+  The project is quite easy actually.
+* What has been difficult?
+  
+  Guessing header size and the gap between. It would be easier if I know the character size and gap length.
+* How have you used the problem solving strategies from the first project to overcome challenges so far?
+
+
+  This is the first project :)   
