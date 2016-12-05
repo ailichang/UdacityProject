@@ -1,1 +1,50 @@
-/* add your CSS here */
+
+body{
+    font-size: 10px;
+}
+img{
+  width:300px;
+  height:200px;
+  margin: 0 20px 5px 20px;
+}
+ul{
+  list-style-type:none;
+  padding-left: 0;
+  font-size: 0.8em;
+}
+span{
+  font-weight: bold;
+}
+.italic{
+  font-style: italic;
+  font-size: 0.8em;
+}
+.text-justify{
+  text-align: justify;
+}
+.animal-name{
+  font-size: 1.6em;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 0;
+}
+.card{
+  font-size: 1.2em;
+  width:340px;
+  margin: 20px;
+  box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.1);
+  border-style: solid;
+  border-color: rgba(0,0,0,0.15);
+  border-width: thin;
+}
+.info{
+  border-style: solid;
+  border-color: rgba(0,0,0,0.15);
+  border-width: thin;
+  margin: 0 20px 20px 20px;
+  padding: 0 10px 0 10px;
+}
