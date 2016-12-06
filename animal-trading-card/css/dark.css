@@ -1,34 +1,39 @@
 
-body{
+body {
     font-size: 10px;
     background: rgba(0,0,0,0.3);
 }
-img{
-  width:300px;
-  height:200px;
+
+.photo {
+  width: 300px;
+  height: 200px;
   margin: 0 20px 5px 20px;
   border-radius: 5px;
 }
-ul{
-  list-style-type:none;
+ul {
+  list-style-type: none;
   padding-left: 0;
   font-size: 0.8em;
 }
-span{
+
+.bolder {
   font-weight: bolder;
 }
-.italic{
+
+.italic {
   font-style: italic;
   font-size: 0.8em;
   color: rgb(179, 230, 255);
 }
-.text-justify{
+
+.text-justify {
   text-align: justify;
 }
-.animal-name{
+
+.animal-name {
   font-size: 2em;
   font-weight: bolder;
-  font-family:"Lucida Bright","Times New Roman";
+  font-family: "Lucida Bright","Times New Roman";
   text-align: center;
   margin-top: 20px;
   margin-bottom: 5px;
@@ -36,9 +41,9 @@ span{
   margin-right: 20px;
   padding: 0;
 }
-.card{
+.card {
   font-size: 1.2em;
-  width:340px;
+  width: 340px;
   margin: 20px;
   color: rgba(255, 255, 255, 0.9);
   font-family: "Times New Roman";
@@ -49,7 +54,7 @@ span{
   border-width: thin;
   border-radius: 15px;
 }
-.info{
+.info {
   border-style: solid;
   background-color: rgba(255,255, 255 , 0.2);
   border-color: rgba(255,255,255,0.15);
