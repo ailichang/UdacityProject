@@ -8,15 +8,67 @@ body{
     flex-wrap: wrap;
 }
 
+hr{
+    clear:both;
+    border: 2px solid #7d97ad;
+
+}
+
+h1{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    font-size: 64px;
+    margin: 0;
+}
+h2{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: black;
+    margin: 0;
+    text-align:center;
+}
+h3{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    margin: 0;
+    padding: 10px;
+}
+
+h4{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+}
 #logo{
     display: inline;
     float: left;
 }
-.basic-info{
+#basic-info{
     display: inline;
     float: right;
+    text-align: right;
+    padding: 12px 0;
 }
 
+.work-picture{
+    float:left;
+    width: calc((100vw - 60px)/3);
+    margin: auto;
+    margin-right: 30px;
+}
+.work-picture:last-of-type{
+    margin-right: 0;
+}
+
+.link{
+    text-decoration: none;
+}
+.float-right{
+    float:right;
+}
 
 .lightblue{
     color:#02b3e4;
