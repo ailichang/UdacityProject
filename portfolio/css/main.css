@@ -1,6 +1,4 @@
-* {
-    border: 1px solid red !important;
-}
+
 
 * {
     -webkit-box-sizing: border-box;
@@ -18,6 +16,7 @@
 .row {
     width: 100%;
     display: flex;
+    margin: 0;
 }
 
 .col-1 {
