@@ -37,8 +37,6 @@ var bio = {
         $("#header-info").prepend(pic);
         $("#header").prepend(msg);
 
-
-
         $("#footerContacts").append(contacts);
     }
 };
@@ -84,13 +82,13 @@ var education = {
                 $(".education-entry:last").append(formattedMajor);
             }
         }
-        for (var i = 0; i < education.onlineCourses.length; i++) {
-            var formattedName = HTMLonlineTitle.replace("%data%", education.onlineCourses[i].name);
-            var formattedSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[i].school);
-            var formattedDates = HTMLonlineDates.replace("%data%", education.onlineCourses[i].dates);
-            var firstLine = formattedName + formattedSchool;
-            $(".education-entry:last").append(firstLine);
-            $(".education-entry:last").append(formattedDates);
+        for (var k = 0; k < education.onlineCourses.length; k++) {
+            var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[k].name);
+            var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[k].school);
+            var formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[k].dates);
+            var combinedLine = formattedOnlineTitle + formattedOnlineSchool;
+            $(".education-entry:last").append(combinedLine);
+            $(".education-entry:last").append(formattedOnlineDates);
         }
     }
 

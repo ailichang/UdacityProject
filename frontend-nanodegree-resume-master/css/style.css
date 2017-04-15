@@ -1,7 +1,7 @@
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
 /* fontawesome */
 [class*="fontawesome-"]:before {
-    font-family: 'FontAwesome', sans-serif;
+  font-family: 'FontAwesome', sans-serif;
 }
 
 div,
@@ -14,257 +14,412 @@ h3,
 h4,
 h5,
 h6 {
-    padding: 0;
-    margin: 0;
-    font-family: 'Roboto Slab', serif;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto Slab', serif;
 }
 
 html, body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-    font-size: 56px;
-    color: #F9BF45;
-    line-height: 80px;
-    display: inline;
+  font-size: 28px;
+  color: #F9BF45;
+  line-height: 30px;
+  display: inline;
 }
 
 h2 {
-    font-weight: bold;
-    font-size: 40px;
-    color: #999;
-    line-height: 29px;
-    padding: 3% 5%;
+  font-weight: bold;
+  font-size: 24px;
+  color: #999;
+  line-height: 29px;
+  padding: 3% 5%;
 }
 
 h3 {
-    font-style: italic;
-    font-size: 20px;
-    color: rgb(250, 214, 137);
-    line-height: 50px;
+  font-style: italic;
+  font-size: 14px;
+  color: rgb(250, 214, 137);
+  line-height: 40px;
 }
 
 h4 {
-    font-weight: bold;
-    font-size: 14px;
-    color: #4a4a4a;
-    line-height: 17px;
+  font-weight: bold;
+  font-size: 10px;
+  color: #4a4a4a;
+  line-height: 17px;
 }
 
 p {
-    font-size: 14px;
-    color: #333;
-    line-height: 21px;
+  font-size: 12px;
+  color: #333;
+  line-height: 14px;
 }
 
 a {
-    color: #1199c3;
-    text-decoration: none;
-    margin-top: 10px;
-    display: block;
+  color: #1199c3;
+  text-decoration: none;
+  margin-top: 12px;
+  display: block;
+}
+
+em {
+  font-size: 12px;
 }
 
 ul, li {
-    list-style-type: none;
-    text-align: justify;
-    display: inline-block;
+  list-style-type: none;
+  text-align: justify;
+  display: inline-block;
 }
 
 img {
-    padding: 10px;
+  padding: 10px;
 }
 
 span {
-    padding: 5px;
+  padding: 5px;
 }
 
 .clear-fix {
-    overflow: auto;
+  overflow: auto;
 }
 
 .flex-box {
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 10px;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
 }
 
 .flex-column {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 10px;
 }
 
 .center-content {
-    padding: 2.5% 5%;
+  padding: 2.5% 5%;
 }
 
 .full-screen {
-    height: 100vh;
-    width: 100vw;
-    position: relative;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
 }
 
 .biopic {
-    margin: auto;
-    padding: 10px;
-    height: 200px;
-    border-radius: 20px;
-    //round corners
+  margin: auto;
+  padding: 10px;
+  height: 100px;
+  border-radius: 20px;
   margin: 0 auto;
-    display: block;
+  display: block;
+}
+
+.project-img{
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
 }
 
 .welcome-message {
-    font-style: italic;
-    font-size: 18px;
-    color: #f3f3f3;
-    line-height: 28px;
+  font-style: italic;
+  font-size: 18px;
+  color: #f3f3f3;
+  line-height: 28px;
 }
 
 .education-entry,
-.work-entry,
+.work-entry {
+  padding: 0 5%;
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .project-entry {
-    padding: 0 5%;
-    width: 60%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  padding: 0 5%;
+  width: 60%;
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .date-text {
-    font-style: italic;
-    font-size: 14px;
-    color: #999;
-    line-height: 16px;
-    float: left;
+  font-style: italic;
+  font-size: 10px;
+  color: #999;
+  line-height: 16px;
+  float: left;
 }
 
 .location-text {
-    font-style: italic;
-    font-size: 14px;
-    color: #999;
-    line-height: 16px;
-    float: right;
+  font-style: italic;
+  font-size: 10px;
+  color: #999;
+  line-height: 16px;
+  float: right;
 }
 
+.contact-text {
+  font-size: 12px;
+}
 .center-text {
-    text-align: center;
+  text-align: center;
 }
 
 .orange {
-    background-color: rgba(250, 214, 137, 0.8);
+  background-color: rgba(250, 214, 137, 0.8);
 }
 
 .orange-text {
-    color: #F9BF45;
+  color: #F9BF45;
 }
 
 .white-text {
-    font-weight: bold;
-    color: #fff;
+  font-weight: bold;
+  color: #fff;
 }
 
 .gray {
-    background-color: rgba(97, 97, 56, 0.3);
-    padding-bottom: 10px;
-    clear: both;
-    display: block;
+  background-color: rgba(97, 97, 56, 0.3);
+  padding-bottom: 10px;
+  clear: both;
+  display: block;
 }
 
 .white {
-    background-color: rgba(250, 214, 137, 0.1);
-    padding-bottom: 10px;
-    clear: both;
-    display: block;
+  background-color: rgba(250, 214, 137, 0.1);
+  padding-bottom: 10px;
+  clear: both;
+  display: block;
 }
 
 .dark-gray {
-    background-color: rgba(55, 60, 56, 0.8);
+  background-color: rgba(55, 60, 56, 0.8);
 }
 
 
 /* TODO: Replace with image later */
 #header {
-    background-color: rgba(55, 60, 56, 0.8);
+  background-color: rgba(55, 60, 56, 0.8);
 }
 
 #header-info {
-    width: 40%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  width: 75%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #topContacts {
-    width: 50%;
-    margin: auto;
+  width: 50%;
+  margin: auto;
 }
 
 #main {
-    background: url("../images/paper.jpg") repeat fixed center;
+  background: url("../images/paper.jpg") repeat fixed center;
 }
 
 #skills-h3 {
-    color: #F9BF45;
-    display: none;
-    text-align: center;
+  color: #F9BF45;
+  text-align: center;
 }
 
 #lets-connect {
-    text-align: center;
+  text-align: center;
 }
 
 #map {
-    display: block;
-    height: 60%;
-    margin: 5% 5% 5% 5%;
+  display: block;
+  height: 60%;
+  margin: 5% 5% 5% 5%;
 }
 
 #mapDiv {
-    padding-bottom: 5%;
+  padding: 0;
 }
 
 /* Media queries to handle various device widths */
 
-@media only screen and (max-width: 1024px) {
-    #lets-connect {
-        margin-top: 5%;
-    };
-}
+@media only screen and (min-width: 1025px) {
 
-@media only screen and (max-width:900px) {
-    .biopic {
-        width: 175px;
-    };
-}
+    h1 {
+      font-size: 56px;
+      line-height: 80px;
+    }
 
-@media only screen and (max-width: 750px) {
-    #lets-connect {
-        margin-top: 10%;
+    h2 {
+      font-size: 40px;
+      line-height: 29px;
+      padding: 3% 5%;
+    }
+
+    h3 {
+      font-size: 20px;
+      line-height: 50px;
+      padding: 0;
+    }
+
+    h4 {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+   a {
+      font-size: 24px;
+   }
+
+    p {
+      font-size: 18px;
+      line-height: 21px;
+    }
+
+    em {
+      font-size: 20px;
+    }
+
+    .contact-text {
+      font-size: 18px;
+      line-height: normal;
+    }
+
+    .orange-text {
+      font-size: 20px;
+    }
+
+    .date-text {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    .location-text {
+      font-size: 18px;
+      line-height: 24px;
     }
 
     .biopic {
-        width: 150px;
+      width: 300px;
+      height: 300px;
     }
 
-    .welcome-message {
-        display: none;
-    };
+    #header-info {
+        width: 40%;
+    }
+
+    .project-img{
+        width: 40%;
+        height: 40%;
+        margin: 0 auto;
+    }
+
 }
 
-@media only screen and (min-width: 750px) {
-    #skills-h3,
+@media only screen and (min-width:751px) and (max-width:1024px) {
+
+    h1 {
+      font-size: 48px;
+      line-height: 80px;
+    }
+
+    h2 {
+      font-size: 32px;
+      line-height: 29px;
+      padding: 3% 5%;
+    }
+
+    h3 {
+      font-size: 16px;
+      line-height: 50px;
+      padding: 0;
+    }
+
+    h4 {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+   a {
+      font-size: 14px;
+   }
+
+    p {
+      font-size: 14px;
+      line-height: 21px;
+    }
+
+    em {
+      font-size: 14px;
+    }
+
+    .contact-text {
+      font-size: 18px;
+      line-height: normal;
+    }
+
+    .orange-text {
+      font-size: 18px;
+    }
+
+    .date-text {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .location-text {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    #header-info {
+        width: 40%;
+    }
+
   .biopic {
-        display: block;
-    };
+    width: 200px;
+    height: 200px;
+  }
+
+  .project-entry {
+    padding: 0 5%;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .project-img{
+      width: 50%;
+      height: 50%;
+      margin: 0 auto;
+  }
+
+}
+
+@media only screen and (min-width: 451px) and (max-width: 750px) {
+
+    .project-img{
+        width: 65%;
+        height: 65%;
+        margin: 0 auto;
+    }
+
+  #skills-h3,
+  .biopic {
+    display: block;
+  }
 }
