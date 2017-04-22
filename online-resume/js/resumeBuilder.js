@@ -6,7 +6,6 @@ var bio = {
         mobile: "412.608.2527",
         email: "emilyailichang@gmail.com",
         github: "ailichang",
-        twitter: "",
         location: "San Mateo, CA"
     },
     welcomeMessage: "Hello :)",
@@ -22,15 +21,13 @@ var bio = {
         var pic = HTMLbioPic.replace("%data%", bio.biopic);
         var msg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
         var contacts = mobile + email + github + location;
-
-        var contactStart = $("#header-info").find("ul");
-        $(contactStart).append(contacts);
+        $("#topContacts").append(contacts);
 
         $("#header-info").append(HTMLskillsStart);
-        var skillsStart = $("#header-info").find("ul").last();
+
         for (var i = 0; i < bio.skills.length; i++) {
             var formattedSkill = HTMLskills.replace("%data%", bio.skills[i]);
-            $(skillsStart).append(formattedSkill);
+            $("#skills").append(formattedSkill);
         }
         var title = "<div class=\"center-text\">" + name + role + "</div>";
         $("#header-info").prepend(title);
@@ -48,7 +45,7 @@ var education = {
             degree: "Masters",
             majors: ["Entertainment Technology"],
             dates: "2013-2015",
-            url: ""
+            url: "https://www.etc.cmu.edu/"
         },
         {
             name: "National Taiwan Normal University",
@@ -56,19 +53,19 @@ var education = {
             degree: "Bachelor",
             majors: ["Computer Science and Information Engineering"],
             dates: "2013-2015",
-            url: ""
+            url: "http://w1.csie.ntnu.edu.tw/en/"
         }
     ],
     onlineCourses: [{
         name: "Frontend Nano Degree",
         school: "Udacity",
         dates: "2016.12-Present",
-        url: ""
+        url: "https://www.udacity.com/"
     }],
     display: function() {
         $("#education").append(HTMLschoolStart);
         for (var i = 0; i < education.schools.length; i++) {
-            var formattedName = HTMLschoolName.replace("%data%", education.schools[i].name);
+            var formattedName = HTMLschoolName.replace("%data%", education.schools[i].name).replace("#",education.schools[i].url);
             var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[i].location);
             var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[i].degree);
             var formattedDates = HTMLschoolDates.replace("%data%", education.schools[i].dates);
@@ -83,7 +80,7 @@ var education = {
             }
         }
         for (var k = 0; k < education.onlineCourses.length; k++) {
-            var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[k].name);
+            var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[k].name).replace("#", education.onlineCourses[k].url);
             var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[k].school);
             var formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[k].dates);
             var combinedLine = formattedOnlineTitle + formattedOnlineSchool;
@@ -100,12 +97,13 @@ var work = {
         title: "Unity Developer",
         location: "Redwood City, CA",
         dates: "2015.12-Present",
+        url:"http://www.realiteer.com/",
         description: "Collaborating with the team to brainstorm ideas, design game mechanics, rapid prototype and implement features for company’s core projects and client products."
     }],
     display: function() {
         $("#workExperience").append(HTMLworkStart);
         for (var i = 0; i < work.jobs.length; i++) {
-            var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[i].employer);
+            var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[i].employer).replace("#", work.jobs[i].url);
             var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[i].title);
             var formattedEmployerTitle = formattedEmployer + " " + formattedTitle;
             var formattedDate = HTMLworkDates.replace("%data%", work.jobs[i].dates);
