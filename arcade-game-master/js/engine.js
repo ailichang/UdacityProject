@@ -80,7 +80,7 @@ var Engine = (function(global) {
      */
     function update(dt) {
         updateEntities(dt);
-        // checkCollisions();
+        checkCollisions();
     }
 
     /* This is called by the update function and loops through all of the
@@ -153,6 +153,26 @@ var Engine = (function(global) {
 
         player.render();
     }
+    /*this functions check collision, if player and enemy collides the game reset*/
+    function checkCollisions(){
+        for(var i = 0; i < allEnemies.length; i++){
+            var dist = calculateDistance({x:player.x, y:player.y}, {x:allEnemies[i].x,y:allEnemies[i].y});
+            if(dist < 60){
+                 reset();
+                 return true;
+            }
+        }
+        return false;
+
+    }
+
+    function calculateDistance( from, to){
+        var x = to.x - from.x;
+        var y = to.y - from.y;
+        var distance = Math.sqrt(x*x + y*y);
+        return distance;
+
+    }
 
     /* This function does nothing but it could have been a good place to
      * handle game reset states - maybe a new game menu or a game over screen
@@ -160,6 +180,7 @@ var Engine = (function(global) {
      */
     function reset() {
         // noop
+        player.position = {x:2, y:5};
     }
 
     /* Go ahead and load all of the images we know we're going to need to
